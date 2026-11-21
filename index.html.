@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#251018">
+<meta name="description" content="Mix — мессенджер для общения, чатов и сообществ.">
+<title>Mix — Общайся свободно</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#fff;color:#251018}
+header{background:#251018;color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:28px;font-weight:bold;color:#ffb6ca}
+nav a{color:white;text-decoration:none;margin-left:15px}
+.hero{background:linear-gradient(135deg,#251018,#812b49);color:white;text-align:center;padding:85px 20px}
+.hero h1{font-size:42px;margin:0 0 15px}
+.hero p{font-size:18px;color:#f3dce4}
+.btn{display:inline-block;background:#ed9ab5;color:#251018;padding:15px 28px;border-radius:12px;text-decoration:none;font-weight:bold;margin-top:20px}
+section{padding:55px 7%;text-align:center}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;max-width:850px;margin:25px auto}
+.feature{background:#f8edf1;padding:25px 12px;border-radius:16px}
+.feature span{font-size:32px}
+.feature h3{margin-bottom:5px}
+footer{background:#251018;color:#eee;text-align:center;padding:25px}
+footer a{color:#ffb6ca}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">Mix</div>
+<nav><a href="#features">Возможности</a><a href="#about">О нас</a></nav>
+</header>
+<main>
+<div class="hero">
+<h1>Общайся. Создавай. Будь в Mix.</h1>
+<p>Твой мир общения, друзей и сообществ в одном месте.</p>
+<a class="btn" href="#download">Скачать Mix</a>
+</div>
+<section id="features">
+<h2>Возможности Mix</h2>
+<div class="features">
+<div class="feature"><span>💬</span><h3>Чаты</h3><p>Общение с друзьями</p></div>
+<div class="feature"><span>🌐</span><h3>Сообщества</h3><p>Создавай свои серверы</p></div>
+<div class="feature"><span>👤</span><h3>Профили</h3><p>Настраивай свой профиль</p></div>
+<div class="feature"><span>🎨</span><h3>Темы</h3><p>Выбирай оформление</p></div>
+</div>
+</section>
+<section id="about">
+<h2>Добро пожаловать в Mix!</h2>
+<p>Mix — пространство для общения и новых знакомств.</p>
+</section>
+<section id="download">
+<h2>Скачать приложение</h2>
+<p>Скоро здесь появится ссылка на скачивание Mix.</p>
+</section>
+</main>
+<footer>
+<p>© 2026 Mix</p>
+<p>Официальный сайт Mix</p>
+</footer>
+</body>
+</html>
+
+HTML
