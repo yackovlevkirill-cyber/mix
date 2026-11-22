@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6f1735">
+  <meta name="description" content="Mix — общение, личные чаты и сообщества в одном месте.">
+  <title>Mix — общайся по-своему</title>
+  <style>
+    :root{--bg:#fff;--surface:#f6f3f4;--text:#211b1e;--muted:#71666b;--brand:#781b3b;--brand2:#a52b55;--line:#eadfe3}
+    [data-theme="dark"]{--bg:#151216;--surface:#211b21;--text:#f7eff2;--muted:#b9aab1;--brand:#b83b65;--brand2:#d85b82;--line:#3a2d34}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}.logo{font-size:27px;font-weight:850;letter-spacing:-1px;color:var(--brand)}
+    .navlinks{display:flex;gap:24px;align-items:center}.navlinks a{color:var(--muted);font-weight:600}.navlinks a:hover{color:var(--brand)}
+    button,.btn{border:0;border-radius:13px;padding:11px 17px;font:inherit;font-weight:700;cursor:pointer}
+    .primary{background:var(--brand);color:white}.secondary{background:var(--surface);color:var(--text);border:1px solid var(--line)}
+    .hero{padding:76px 0 65px;background:radial-gradient(ellipse at 85% 20%,color-mix(in srgb,var(--brand) 15%,transparent),transparent 42%)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:center}
+    .tag{display:inline-block;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:6px 12px;color:var(--brand);font-weight:750;font-size:13px}
+    h1{font-size:clamp(42px,7vw,70px);line-height:1.04;letter-spacing:-2.5px;margin:18px 0}
+    .lead{font-size:19px;color:var(--muted);max-width:570px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+    .preview{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:18px;box-shadow:0 24px 70px #40112618;transform:rotate(1deg)}
+    .preview-top{display:flex;justify-content:space-between;align-items:center;padding:4px 4px 15px;font-weight:800}
+    .dot{width:9px;height:9px;background:#40b879;border-radius:50%;display:inline-block;margin-right:7px}
+    .chat{padding:12px 14px;border-radius:15px;margin:9px 0;background:var(--bg);border:1px solid var(--line)}
+    .chat b{display:block}.chat small{color:var(--muted)}.chat.me{background:var(--brand);color:white;margin-left:34px}
+    section{padding:64px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 32px}.section-head h2{font-size:34px;line-height:1.2;margin:0 0 10px}.section-head p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+    .emoji{font-size:30px}.card h3{margin:10px 0 5px}.card p{margin:0;color:var(--muted)}
+    .banner{background:var(--brand);color:white;border-radius:26px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:20px}.banner p{opacity:.85;margin:6px 0 0}.banner .btn{background:white;color:#68152f;white-space:nowrap}
+    footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted)}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:760px){.hero-grid{grid-template-columns:1fr}.preview{max-width:500px}.cards{grid-template-columns:1fr}.navlinks{gap:12px}.navlinks a:nth-child(2){display:none}.hero{padding:52px 0}.banner{display:block}.banner .btn{display:inline-block;margin-top:18px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="logo" href="#">mix</a>
+  <div class="navlinks"><a href="#features">Возможности</a><a href="#about">О проекте</a><button class="secondary" id="themeBtn" aria-label="Сменить тему">☾</button></div>
+</nav></div></header>
+<main>
+  <section class="hero"><div class="wrap hero-grid">
+    <div><span class="tag">ТВОЁ ПРОСТРАНСТВО ДЛЯ ОБЩЕНИЯ</span>
+      <h1>Общайся.<br><span style="color:var(--brand)">Создавай.</span><br>Будь в Mix.</h1>
+      <p class="lead">Личные переписки, групповые чаты и сообщества — всё в одном месте. Создавай своё пространство и приглашай друзей.</p>
+      <div class="actions"><a class="btn primary" href="#features">Узнать о Mix</a><a class="btn secondary" href="https://github.com/yackovlevkirill-cyber/mix">Открыть проект на GitHub ↗</a></div>
+    </div>
+    <div class="preview" aria-label="Демонстрационный макет чата">
+      <div class="preview-top"><span>mix <small style="color:var(--muted)">/ сообщения</small></span><span><i class="dot"></i>онлайн</span></div>
+      <div class="chat"><b>🍓 Клуб друзей</b><small>Добро пожаловать в наше сообщество!</small></div>
+      <div class="chat"><b>🍕 Алекс</b><small>Кто сегодня играет?</small></div>
+      <div class="chat me"><b>Ты</b><small>Я буду! 🎮</small></div>
+      <div class="chat"><b>🍩 Маша</b><small>Уже создала новый канал ✨</small></div>
+    </div>
+  </div></section>
+  <section id="features"><div class="wrap">
+    <div class="section-head"><h2>Всё нужное для общения</h2><p>Mix задуман как удобное место для переписок и своих сообществ.</p></div>
+    <div class="cards">
+      <article class="card"><div class="emoji">💬</div><h3>Личные чаты</h3><p>Общайся с друзьями в личных переписках.</p></article>
+      <article class="card"><div class="emoji">🌐</div><h3>Сообщества</h3><p>Создавай серверы, приглашай участников и открывай каналы.</p></article>
+      <article class="card"><div class="emoji">🍓</div><h3>Твой профиль</h3><p>Настраивай имя, описание и аватар — например, из еды.</p></article>
+      <article class="card"><div class="emoji">🎭</div><h3>Роли</h3><p>Разделяй обязанности владельца, администраторов и участников.</p></article>
+      <article class="card"><div class="emoji">❤️</div><h3>Реакции</h3><p>Отвечай на сообщения реакциями и поддерживай разговор.</p></article>
+      <article class="card"><div class="emoji">🌙</div><h3>Темы</h3><p>Выбирай оформление, которое тебе удобно.</p></article>
+    </div>
+  </div></section>
+  <section id="about"><div class="wrap"><div class="banner">
+    <div><h2 style="margin:0;font-size:30px">Mix развивается</h2><p>Следи за проектом и его обновлениями на GitHub.</p></div>
+    <a class="btn" href="https://github.com/yackovlevkirill-cyber/mix">Перейти на GitHub ↗</a>
+  </div></div></section>
+</main>
+<footer><div class="wrap foot"><span><b style="color:var(--brand)">mix</b> © 2026</span><span>Официальный сайт проекта Mix</span></div></footer>
+<script>
+  const btn=document.getElementById('themeBtn');
+  btn.addEventListener('click',()=>{const dark=document.documentElement.dataset.theme!=='dark';document.documentElement.dataset.theme=dark?'dark':'light';btn.textContent=dark?'☀':'☾';});
+</script>
+</body>
+</html>
